@@ -17,15 +17,7 @@ namespace Testing
 
         public void ShowHud(Panel panel)
         {
-            if(panel.Visible == true)
-            {
-                panel.Visible = false;
-            }
-            else
-            {
-                HideHud();
-                panel.Visible = true;
-            }
+            panel.Visible = !panel.Visible;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -42,5 +34,7 @@ namespace Testing
         {
             ShowHud(panel5);
         }
+
+        
     }
 }
